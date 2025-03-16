@@ -26,6 +26,7 @@ Use this example by:
 
 - Adding the Lua code to your SoundWaves theme (replace the final return statement in "BGAnimations/ScreenEvaluation underlay/default.lua" with the contents of "example-soundwaves-grade-code.lua" from this repo)
 - Renaming your announcer directories (for whichever announcer you have selected) with the evaluation prefix to have the eval prefix instead (for example, "evaluation a" renamed to "eval a")
+  - Don't rename "evaluation cheer" because that can play at the same time as other audios, but still name "evaluation new record" to "eval new record"
 
 Note that my Lua code doesn't distinguish the "evaluation" and "evaluation final" audios. In the announcer pack I use, the audios for final and non-final are identical, so I didn't have to worry about it.
 

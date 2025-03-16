@@ -20,12 +20,12 @@ I've done a mapping from SoundWaves grades to legacy announcer grades, my first 
 - Announcer grade "c" is used for SoundWaves grades C+, C, C-
 - Announcer grade "d" is used for SoundWaves grades D+, D, D-
 
-(Side note: This mapping didn't seem to work great for me in terms of grade distribution matching what I was used to. I think this is because grade thresholds are set differently (the thresholds themselves are listed in the theme, but I have reason to believe they are interpreted a bit differently by OutFox than in legacy StepMania). In particular in my local setup, I tweaked AA+ and AA to map to aaa, and A+ to aa, but YMMV.)
+(Side note: This mapping didn't seem to work great for me in terms of grade distribution matching what I was used to. I think this is because grade thresholds are set differently (the thresholds themselves are listed in the theme, but I have reason to believe they are interpreted a bit differently by OutFox/SoundWaves than in legacy StepMania). In particular in my local setup, I tweaked AA+ and AA to map to aaa, and A+ to aa, but YMMV.)
 
 Use this example by:
 
 - Adding the Lua code to your SoundWaves theme (replace the final return statement in "BGAnimations/ScreenEvaluation underlay/default.lua" with the contents of "example-soundwaves-grade-code.lua" from this repo)
-- Renaming your announcer directories with the evaluation prefix to have the eval prefix instead (for example, "evaluation a" renamed to "eval a")
+- Renaming your announcer directories (for whichever announcer you have selected) with the evaluation prefix to have the eval prefix instead (for example, "evaluation a" renamed to "eval a")
 
 Note that my Lua code doesn't distinguish the "evaluation" and "evaluation final" audios. In the announcer pack I use, the audios for final and non-final are identical, so I didn't have to worry about it.
 

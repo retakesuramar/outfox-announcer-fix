@@ -32,6 +32,14 @@ Note that my Lua code doesn't distinguish the "evaluation" and "evaluation final
 
 ## Other themes
 
-You would have to make similar changes in other themes, including ones which were working previously. For me, in addition to SoundWaves I use Alpha V Dance, SM5-Legacy and DDR A. The latter two were working before as they use 7 grade systems, but after renaming evaluation to eval, I had to "fix" them too (using a similar Lua but with a reduced mapping for 7 grades rather than 17).
+You would have to make similar changes in other themes, including ones which were working previously. For me, in addition to SoundWaves I use Alpha V Dance, SM5-Legacy and DDR A.
+
+### 7 grade based themes
+
+Themes like DDR A and SM5-Legacy were working pretty much fine before as they use 7 grade systems, but after renaming evaluation to eval, I had to "fix" them too (using a similar Lua but with a reduced mapping for 7 grades rather than 17).
+
+By default, grade 1 is aaaa, 2 is aaa, 3 is aa, 4 is a, 5 is b, 6 is c, 7 is d. However, my announcer doesn't even have aaaa, so I mapped grades 1 and 2 to aaa.
+
+### Alpha V Dance
 
 For Alpha V Dance, it also has 17 grades, but they are named differently. For example, in SoundWaves, grade number 1 is AAA+, 7 is A and 9 is B+. In Alpha V Dance, grade number 1 is ****, grade 7 is S- and 9 is A. Despite this, I used the same mapping for both, as the thresholds for both themes are set identically in terms of the grade numbers.
